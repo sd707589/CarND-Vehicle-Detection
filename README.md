@@ -76,6 +76,7 @@ The code locates at the 206-222 lines in myReport.py.
 I decided to search 5 different scale ranges over the image and came up with this:
 ![alt text][image5]
 These ranges are set by 'y' values:
+
 | Range  | y Value Range   |
 |:--:|:-----|
 | 1 | 400, 464   |
@@ -83,6 +84,7 @@ These ranges are set by 'y' values:
 | 3 | 400, 592   |
 | 4 | 400, 656   |
 | 5 | 400, 720   |
+
 And the searching areas should look like this:
 ![alt text][image6]
 
