@@ -77,6 +77,7 @@ I decided to search 5 different scale ranges over the image and came up with thi
 ![alt text][image5]
 These ranges are set by 'y' values:
 
+
 | Range  | y Value Range   |
 |:--:|:-----|
 | 1 | 400, 464   |
