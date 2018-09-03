@@ -74,9 +74,10 @@ I trained a linear SVM using both color features and HOG features. The color fea
 
 The code locates at the 206-222 lines in myReport.py.
 I decided to search 5 different scale ranges over the image and came up with this:
-![alt text][image5]
-These ranges are set by 'y' values:
 
+![alt text][image5]
+
+These ranges are set by 'y' values:
 
 | Range  | y Value Range   |
 |:--:|:-----|
@@ -87,6 +88,7 @@ These ranges are set by 'y' values:
 | 5 | 400, 720   |
 
 And the searching areas should look like this:
+
 ![alt text][image6]
 
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
@@ -107,9 +109,11 @@ The code locates at the 339-373 lines in myReport.py.
 I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions. To enhance the detection stability, detections of last frame should also be considered. I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
 
 Here's an example result showing the heatmap from a series of frames of video, the result of `scipy.ndimage.measurements.label()` and the bounding boxes then overlaid on the last frame of video: `./output_test_video.mp4 `.
+
 ![alt text][video2]
 
 ### Here are six frames and their corresponding heatmaps, the output of `scipy.ndimage.measurements.label()` on the integrated heatmap from all six frames, and the resulting bounding boxes are drawn onto the last frame in the series:
+
 ![alt text][image7]
 ![alt text][image8]
 ![alt text][image9]
